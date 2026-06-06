@@ -32,10 +32,9 @@ This project modernizes a standard RC car by integrating an ESP32 microcontrolle
 ## ⚙️ Setup & Installation
 1. Clone this repository.
 2. Create a `secrets.h` file in the root directory and define your Wi-Fi credentials (this file is ignored by Git for security):
-   ```cpp
+```cpp
    #define WIFI_SSID "your_ssid"
    #define WIFI_PASSWORD "your_password"
-
 ```
  3. Upload the frontend files to the ESP32's SPIFFS/LittleFS.
  4. Flash the ESP32 using your preferred IDE.
