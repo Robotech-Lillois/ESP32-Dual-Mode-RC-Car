@@ -1,0 +1,78 @@
+* {
+	user-select: none;
+	background-color:#e27124;
+	color: white;
+	box-sizing: border-box; /* Empêche les débordements */
+}
+
+/* ----------------------- LE TITRE ----------------------- */
+header {
+	display: flex;
+	position: relative;
+	font-size: clamp(12px, 2vw, 20px);
+
+	justify-content: center; /* Centre horizontalement */
+	align-items: center; /* Centre verticalement */
+
+	text-align: center;
+
+	width: 100%; /* Assure que le header prend toute la largeur */
+	min-height: 100px; /* Garde une hauteur minimale */
+	
+	margin-top: clamp(-25px, -3vw, -12px);
+}
+
+/* ----------------------- VOLANT ----------------------- */
+.volant_svg {
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+
+	width: 55vh;
+	min-width: 100px; /* Garde une hauteur minimale */
+	
+	background: none;
+	z-index: 10;
+}
+
+.volant_svg g {
+	cursor: pointer;
+}
+
+/* ----------------------- RECULER / DRIVE ----------------------- */
+.recule_drive {
+	position: absolute;
+	bottom: 25vh;
+	left: 50vw;
+
+	width: 35vh;
+	min-width: 50px; /* Garde une hauteur minimale */
+	
+	cursor: pointer;
+	
+	transform: translateX(-47%);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.recule_drive_svg {
+	width: 100%;
+	height: auto;
+}
+
+/* ----------------------- PEDALE ACCELERATEUR ----------------------- */
+.pedale input[type="range"] {
+	cursor: pointer;
+	
+	position: absolute;
+	bottom: 40%;
+	right: 10vw;
+
+	width: 50vh;
+	min-width: 100px; /* Garde une hauteur minimale */
+
+	transform: rotate(-90deg);
+} 
