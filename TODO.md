@@ -1,3 +1,3 @@
-- [ ] 1) Backup du code (binaire)
+- [x] 1) Backup du code (binaire) (code C récupéré)
 - [ ] 2) Code basique voiture RC -> comprendre l'architecture de la voiture.
 - [ ] 3) Code réseau -> js + html + css -> analyser le code déjà existant dans ./backup
